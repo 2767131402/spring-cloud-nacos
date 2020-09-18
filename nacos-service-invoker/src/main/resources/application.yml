@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+# ACM 配置的 Data ID 等于 ${spring.application.name}.${spring.cloud.nacos.config.file-extension}
+# 指定配置的 Data ID 前缀，例如：
+spring:
+  profiles:
+    active: dev
+  application:
+    name: nacos-service-invoker
